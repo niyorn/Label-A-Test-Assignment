@@ -1,4 +1,27 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Label A: Star Wars Assignment
+![Star Wars project demo](./readme_assets/demo.gif)
+
+**Link to project:** https://label-a-star-wars.netlify.com/ <br/>
+
+**Description:**</br>
+This project serve as learning process to get a better understanding of React.js and at the same time it is assignment from the company: **Label A** to see if my code skills is good enough for the company.
+
+core functionality of the app is to display all Categories of the Star Wars API and when clicked: to show all available items.
+
+This project was created in: ~ 8 hours
+
+
+## Process
+
+To get a basic understanding of React I've started with watching this [youtube video](https://www.youtube.com/watch?v=sBws8MSXN7A). This video covers: state, props, JSX, events.
+
+Thereafter I've looked up how to create a basic React project and stumble onto the create-react-app cli. `create-react-app` is the command that I've created my project with.
+
+Then I've looked up for the best way to fetch data in React and with the help of this [tutorial](https://www.robinwieruch.de/react-fetching-data/) I've been able to fetch the data.
+
+After a lot of struggling in displaying the data I've used this [tutorial](https://flaviocopes.com/react-how-to-loop/) to create a loop and render the data.
+
+The last step was adding a Router to navigate through the different pages.
 
 ## Available Scripts
 
@@ -12,11 +35,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
@@ -27,45 +45,8 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Todo
+- [ ] add search item
+- [ ] add Loading indicator when fetching data
 
 
-https://www.robinwieruch.de/react-fetching-data/
