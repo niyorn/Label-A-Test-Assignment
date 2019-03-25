@@ -1,14 +1,25 @@
 import React, { Component } from 'react'
+import {Link } from "react-router-dom";
+
 
 const BASE_API = 'https://swapi.co/api/'
 
 const styles = {
   'container-categories': {
-    backgroundColor: 'red'
+    textAlign: 'center'
   },
   'categories': {
-    display: 'flex',
-    flexDirection: 'column'
+		display: 'grid',
+		gridTemplateColumns: 'repeat(auto-fit,minmax(14rem,1fr))',
+    gridGap: '1rem',
+    padding: '1rem'
+  },
+  'category': {
+    fontSize: '1rem',
+    fontWeight: 'bold',
+    padding: '2rem',
+    textDecoration: 'none',
+    color: 'black'
   }
 }
 
@@ -47,7 +58,19 @@ class ViewCategory extends Component {
         <h1>All Star Wars Categories</h1>
         <section style={styles['categories']}>
         {this.state.categories.map((value,index)=> {
-          return <a href="#" key={index}>{value}</a>
+          return <Link to={{
+                pathname: `list/${value}`,
+                state: {
+                  api: this.state.data[value]
+                }
+              }
+            } 
+              key={index}
+              className="button"
+              style={styles['category']}
+            >
+              {value}
+            </Link>
         })}
         </section>
       </article>
