@@ -18,6 +18,8 @@
 .button {
   box-shadow: var(--material-shadow-1);
   transition: all 0.2s ease-out;
+  padding: 1rem;
+  border: none;
 }
 
 .button:hover,
