@@ -5,3 +5,22 @@
   font-family:"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
+
+:root {
+  --material-shadow-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.1);
+  --material-shadow-2: 0 10px 14px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.07);
+}
+
+.container {
+  padding: 1rem;
+}
+
+.button {
+  box-shadow: var(--material-shadow-1);
+  transition: all 0.2s ease-out;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: var(--material-shadow-2)
+}
